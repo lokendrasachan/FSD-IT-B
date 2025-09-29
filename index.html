@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width"=device-width, initial-scale=1>
+        <title>My First web page</title>
+    </head>
+    <body>
+        <h1>My first web page</h1>
+        <h2>My first web page</h2>
+        <h3>My first web page</h3>
+        <h4>My first web page</h4>
+        <h5>My first web page</h5>
+        <h6>My first web page</h6>
+        <marquee direction="left to right">My first Car</marquee>
+        <img src="Car.jpg" width="400" height="300">
+        <video width="400" height="400"controls><source src="HTML/video.crdownload"></video>
+        <script src="../JS/jsfetch.js"></script>
+    </body> 
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function addpara() {
+        const targetDivs = document.querySelectorAll(".para1");
+
+        targetDivs.forEach(div => {
+            const para = document.createElement("p");
+            para.textContent = "This is a new Paragraph.";
+            para.style.color = "blue";
+            div.appendChild(para);
+        });
+    }
+</script>
+
+<body>
+    <button onclick="addpara()">Add Para</button>
+    <div class="para1"></div>
+    <div class="para1"></div>
+    <div class="para1"></div>
+</body>
+</html>
